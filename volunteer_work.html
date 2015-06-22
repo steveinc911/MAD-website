@@ -8,6 +8,7 @@
 <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">    
 <link rel="stylesheet" type="text/css" href="css/main.css">
 <link rel="stylesheet/less" type="text/css" href="css/page.less">
+<link rel="stylesheet/less" type="text/css" href="css/bootstrap-datepicker.css">
 <script type="text/javascript">
     less = { env: 'development' };
 </script>
@@ -19,7 +20,7 @@
 <div class="container-fluid">
 	<div class="row header">
 		<div class="logo-container">
-            <a href="#" class="logo">
+            <a href="index.html" class="logo">
                 <i class="logo-image"></i>
                 <b><i class="kern1">Making a</i><br/>Difference</b>
             </a>
@@ -45,38 +46,66 @@
         </ul>
     </nav>
 	<div class="row content">
-		<div class="slideshow-container">
+		<div class="slideshow-container volunteer-form">
 			<ul>
 				<li>
-                    <img class="img-responsive" src="./images/slider/1.jpg" />
-                    <div class="img-caption">Together we can<br/>put a smile on their faces<br/><a class="btn" href="volunteer_work.html">Volunteer</a></div>
+                    <img class="img-responsive" src="./images/volunteer_bg.jpg" />
+                    <div class="img-caption">
+                        <form action="" class="form-horizontal">
+                            <div class="input-group">
+                              <input type="text" class="form-control input" style="width:300px;" placeholder="Your name" />
+                              <span class="input-group-btn" style="width:0px;"></span>
+                              <input type="text" class="form-control input datepicker" placeholder="Check-in" style="margin-left:-1px" />
+                              <span class="input-group-btn" style="width:0px;"></span>
+                              <input type="text" class="form-control input datepicker" placeholder="Check-out" style="margin-left:-2px" />
+                            </div>
+                            <button class="btn btn-success">
+                                Volunteer
+                            </button>
+                        </form>
+                    </div>
                 </li>
 			</ul>
 		</div>
-		<div class="container block">
-			<h2>Making a difference</h2>
+        
+        <div class="container block">
+			<h2>Schedule</h2>
             <div class="center-block">
-                <ul class="green-circles">
+                <ul class="task-list">
                     <li>
                         <div class="icon-container">
-                            <span class="pencil_icon">
+                            <span class="breakfast_icon">
                             </span>
                         </div>
-                        <b>Education</b>
+                        <b>Breakfast</b>
                     </li>
                     <li>
                         <div class="icon-container">
-                            <span class="family_icon">
+                            <span class="volunteer_icon">
                             </span>
                         </div>
-                        <b>Family<br/>Planning</b>
+                        <b>Volunteer</b>
                     </li>
                     <li>
                         <div class="icon-container">
-                            <span class="women_icon">
+                            <span class="lunch_icon">
                             </span>
                         </div>
-                        <b>Women<br/>Empowerment</b>
+                        <b>Lunch</b>
+                    </li>
+                    <li>
+                        <div class="icon-container">
+                            <span class="volunteer_icon">
+                            </span>
+                        </div>
+                        <b>Volunteer</b>
+                    </li>
+                    <li>
+                        <div class="icon-container">
+                            <span class="eod_icon">
+                            </span>
+                        </div>
+                        <b>Day complete</b>
                     </li>
                 </ul>
             </div>
@@ -104,7 +133,9 @@
 </div>
 
 <script src="js/jquery.js"></script>
+<script src="js/moment.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap-datepicker.min.js"></script>
 <script src="js/general.js"></script>
 
     

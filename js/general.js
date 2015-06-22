@@ -10,4 +10,9 @@ $(document).ready(function(){
             is_menu_shown=0;
         }
     });
+    
+    $(".datepicker").datepicker({
+        autoclose:true,
+        format:'dd M yyyy'
+    });
 });

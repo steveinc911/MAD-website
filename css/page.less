@@ -170,9 +170,7 @@ h2{
 
 
 .btn{
-    background-color:#fff;
     border:2px solid #878787;
-    color:#101010;
     text-transform:uppercase;
 }
 
@@ -356,7 +354,28 @@ h2{
     
 }
 
+
+
 /* EOC: homepage */
+
+//BOC: Volunteer work
+.form-horizontal{
+    display:inline-block;
+}
+
+.volunteer-form{
+    input{
+        font-size:18px;
+    }
+    
+    .img-caption{
+        top:30% !important;
+    }
+    .btn{
+        display:inline-block;
+    }
+}
+//EOC: Volunteer work
 
 
 @media screen and (min-width: 1200px){
@@ -498,6 +517,24 @@ h2{
         top:5px;
     }
     //EOC: homepage
+    
+    //BOC: Volunteer page
+    .volunteer-form{
+        .input-group{
+            text-align:center;
+            margin-left:10px;
+            margin-right:10px;
+        }
+        input{
+            margin-top:10px;
+            width:100% !important;
+            border-radius:0px !important;
+        }
+        span{
+            display:none;
+        }
+    }
+    //EOC: Volunteer page
 }
 
 @media screen and (max-width: 360px){
