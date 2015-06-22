@@ -1,0 +1,248 @@
+/* BOC CSS Reset */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+body *{
+    /*border:1px solid #000;*/
+}
+
+
+/* EOC: CSS Reset */
+
+
+
+/* BOC: Template Styles */
+.header-right{
+    text-align:right;
+}
+
+h2{
+    font-family:Century Gothic;
+    font-size:30px;
+    font-weight:bold;
+}
+
+.block{
+    padding-top:20px;
+    
+}
+
+.main-nav{
+    text-align:right;
+    /*
+    background-color:#daa55c;
+    border-top:4px solid #ea9423;*/
+    border-bottom:1px solid #ffd195;
+    margin-top:10px;
+    border-radius:0px !important;
+    padding-bottom:0px !important;
+    margin-bottom:0px !important;
+    font-family:Century Gothic;
+}
+
+.main-nav .nav{
+   margin-left:auto;
+   margin-right:auto;
+    display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+
+.main-nav a{
+    text-transform: uppercase;
+    color:#ff9400;
+}
+
+.main-nav a:hover{
+    background-color:#d9be99 !important;
+    color:#fff;
+}
+
+.main-nav a:visited{
+    background-color:#d9be99 !important;
+}
+
+
+.header{
+     height:35px;
+}
+
+.logo{
+    
+    background-image: url("../images/logo.png");
+    background-position: 15px 5px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    float: left;
+    height: 140px;
+    margin-left: 10px;
+    margin-top: 10px;
+    position: absolute;
+    width: 321px;
+    z-index: 100;
+    /*
+    background-color: rgba(255,255,255,0.97);
+    -webkit-box-shadow: 4px 4px 5px 3px rgba(0,0,0,0.1);
+    -moz-box-shadow: 4px 4px 5px 3px rgba(0,0,0,0.1);
+    box-shadow: 4px 4px 5px 3px rgba(0,0,0,0.1);*/
+    
+}
+
+.logo b{
+    display: inline-block;
+    font-family: oswald;
+    font-size: 21px;
+    padding-left: 145px;
+    padding-top: 40px;
+    text-align: justify;
+    text-transform: uppercase;
+}
+
+.kern1{
+    letter-spacing: 0.08em;
+    font-style:normal;
+}
+
+.social-links{
+    display:inline-block;
+}
+
+.social-links a{
+    background-repeat:no-repeat;
+    width:24px;
+    height:24px;
+    display:inline-block;
+    margin-right:5px;
+    margin-top:10px;
+}
+
+.social-links a b{
+    display:none;
+}
+
+
+.social-links .facebook{
+    background-image:url("../images/facebook.png");
+}
+
+.social-links .twitter{
+    background-image:url("../images/twitter.png");
+}
+
+.social-links .gplus{
+    background-image:url("../images/gplus.png");
+}
+
+.btn{
+    background-color:#fff;
+    border:2px solid #878787;
+}
+
+
+/* EOC: template styles */
+
+/* BOC: homepage */
+
+
+
+/* EOC: homepage */
+
+
+@media screen and (min-width: 1200px){
+    /* BOC: template styles */
+    .img-responsive{
+        width:100%;
+    }
+    /* EOC: template styles */
+}
+
+
+@media screen and (max-width: 1024px){
+    /* BOC: template styles */
+    .header{
+        height:auto;
+    }
+    
+    .main-nav{
+        text-align:center;
+    }
+    
+    .header-right{
+        position:relative;
+        width:100%;
+        margin-top:5px;
+    }
+    
+    .header-right .social-links{
+        float:right;
+    }
+    
+    .logo-container{
+        margin-left:auto !important;
+        margin-right:auto !important;
+        float:none;
+        text-align:center;
+    }
+    
+    .logo{
+        text-align:left;
+        position:relative;
+        background-color:transparent;
+        float:none;
+        width:245px;
+        border:none;
+        -webkit-box-shadow:none;
+        -moz-box-shadow:none;
+        box-shadow:none;
+    }
+    /* EOC: template styles */
+}
