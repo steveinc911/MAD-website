@@ -57,6 +57,11 @@ body *{
 }
 
 
+
+
 /* EOC: CSS Reset */
 
+input[readonly='readonly']{
+            background-color:#fff !important;
+        }
 
