@@ -4,8 +4,9 @@
       
 }
 
-.TestBorder(){
-  // border: thin solid red; 
+.TestBorder(@border-color: red;){
+    //border: thin solid @border-color;
+    //margin: 1px;
 }
 
 
@@ -368,6 +369,7 @@ h2{
         font-size:18px;
     }
     
+    
     .img-caption{
         top:30% !important;
     }
@@ -544,3 +546,150 @@ h2{
         }
     }
 }
+
+
+//BOC: Booking content
+
+.volunteer-name{
+    margin-right:10px;
+    max-width: 20em;
+}
+
+.age-style{
+    margin-right:20px;
+    margin-left:10px;
+    max-width:4em;
+}
+
+.contact-info-style{
+    margin-bottom:10px;
+    max-width:20em;
+}
+
+.booking-content{
+    .TestBorder(black);
+    
+    //Info under the header
+    .top-info{
+        .TestBorder(red);
+        display: flex;
+        align-items:center;
+        margin: 60px 0px 10px 0px;
+        
+                
+        
+        border-top-color: #9ABB50;
+        border-top-width: 3px;
+        border-top-style: solid;
+        
+        border-bottom-color: #9ABB50;
+        border-bottom-width: 3px;
+        border-bottom-style: solid;
+        
+        img{
+            .TestBorder(black);
+            height:62px;
+            width: 55px;
+            margin-left: 20px;
+        }
+        
+        h3{
+            .TestBorder(black);
+            font-family: sans-serif;
+            font-weight:500;
+        }
+    }//End .top-info
+    
+    .left-info-box{
+         .TestBorder(yellow);
+         margin-top:20px;
+         
+    }
+    
+//Volunter info
+    .volunters-info {
+        .TestBorder(red);
+        font-family: sans-serif;
+        font-weight:500;
+        
+        h2 {
+          //  .TestBorder(orange);
+          margin-bottom: 20px;
+        }
+        
+        .volunteer-cntrl{
+            .TestBorder(black);
+            display:flex;
+            align-items:center;
+            margin-bottom:10px;
+        }
+
+    }
+    
+    .contact-info{
+         .TestBorder(blue);
+         font-family: sans-serif;
+         font-weight:500;
+         margin-top: 50px;
+        
+        h2 {
+            .TestBorder(orange);
+            margin-bottom: 20px;
+        }
+        
+        .contact-cntrl{
+            .TestBorder(green);
+        }
+    }
+    
+    //Booking info right box
+    .booking-info-right{
+        .TestBorder(brown);
+        display: flex;
+        flex-direction:column;
+        
+        //border-right: 2px solid #fafafa;
+        border-left: 2px solid #9ABB50;
+
+        
+        .step{
+            .TestBorder(green);
+            
+            ol li span:first-child{
+                border-width: 3px;
+                border-style: solid;
+                border-radius: 30px;
+                color:#9ABB50;
+            }
+
+        }
+        
+        
+        .right-botton-info{
+            .TestBorder(green);
+            span {
+              display:flex;
+              justify-content:space-between;
+            }
+        }
+        
+    }
+    
+    //Botton nav button
+    .bottom-nav{
+        .TestBorder(red);
+        margin-top: 15px;
+    }
+    
+    
+}
+
+.text-button{
+    border-style: none;
+    color: blue;
+    background: none;
+}
+
+
+
+//EOC: Booking
